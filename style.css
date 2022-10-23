@@ -19,6 +19,23 @@ body {
         "footer footer footer";
 }
 
+@media only screen and (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 40% 40%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "header"
+            "image-selection"
+            "footer";
+    }
+    .footer-text-container {
+        padding-top: 20px;
+    }
+}
+
 .image-selection {
     grid-area: image-selection;
 }
@@ -43,6 +60,10 @@ body {
 
 .footer {
     grid-area: footer;
+}
+
+.footer-text-container {
+    padding-top: 200px;
 }
 
 .header {
