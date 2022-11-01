@@ -65,4 +65,3 @@ document.getElementById('predictButton').onclick = async function(){
   setResult(scores[0].label, scores[0].score);
   console.log(scores);
 };
-
